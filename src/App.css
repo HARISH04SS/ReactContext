@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+.cart {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cart-items {
+  margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cart-item {
   display: flex;
-  flex-direction: column;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  align-items: center; /* Align items centrally for better layout */
+}
+
+.cart-item img {
+  width: 100px; /* Adjust the size as per your requirement */
+  height: 100px; 
+  object-fit: cover; /* Ensures the image scales without stretching */
+  border-radius: 8px; /* Optional: Rounded corners for images */
+}
+
+.item-details {
+  margin-left: 20px;
+  flex-grow: 1;
+}
+
+.quantity-controls {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.quantity-controls button {
+  padding: 5px 10px;
+  margin: 0 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cart-summary {
+  margin-top: 30px;
+  font-weight: bold;
 }
